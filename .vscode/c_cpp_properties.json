@@ -1,0 +1,40 @@
+{
+	"configurations": [{
+			"name": "Linux",
+			"includePath": [
+				"${workspaceFolder}/saltynx_common/include/**",
+				"${workspaceFolder}/saltynx_common/lib/libnx_min/nx/include/**",
+				"/opt/devkitpro/libnx/include/**",
+				"/opt/devkitpro/libnx/include/switch/**",
+				"/opt/devkitpro/portlibs/switch/include/**"
+			],
+			"defines": [
+				"__SWITCH__",
+				"SERVER_IMP"
+			],
+			"compilerPath": "/opt/devkitpro/devkitA64/bin/aarch64-none-elf-gcc",
+			"cStandard": "c11",
+			"cppStandard": "gnu++17",
+			"intelliSenseMode": "gcc-x64"
+		},
+		{
+			"name": "Win32",
+			"includePath": [
+				"${workspaceFolder}/saltynx_common/include/**",
+				"${workspaceFolder}/saltynx_common/lib/libnx_min/nx/include/**",
+				"C:/msys2/opt/devkitpro/libnx/include/**",
+				"C:/msys2/opt/devkitpro/libnx/include/switch/**",
+				"C:/msys2/opt/devkitpro/portlibs/switch/include/**"
+			],
+			"defines": [
+				"__SWITCH__",
+				"SERVER_IMP"
+			],
+			"compilerPath": "C:/msys2/opt/devkitpro/devkitA64/bin/aarch64-none-elf-gcc",
+			"cStandard": "c11",
+			"cppStandard": "gnu++17",
+			"intelliSenseMode": "gcc-x64"
+		}
+	],
+	"version": 4
+}

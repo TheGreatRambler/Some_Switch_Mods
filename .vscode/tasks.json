@@ -1,0 +1,54 @@
+{
+	"version": "2.0.0",
+	"tasks": [{
+			"label": "Build mm2_reverse_gravity Debug",
+			"type": "shell",
+			"promptOnClose": true,
+			"command": "make DINFO=1 -C mm2_reverse_gravity",
+			"group": "build",
+			"presentation": {
+				"reveal": "always",
+				"panel": "dedicated"
+			},
+			"problemMatcher": [{
+				"base": "$gcc",
+				"fileLocation": [
+					"autoDetect",
+					"${workspaceFolder}"
+				]
+			}]
+		},
+		{
+			"label": "Build mm2_reverse_gravity Release",
+			"type": "shell",
+			"promptOnClose": true,
+			"command": "make BUILD_TYPE=release -C mm2_reverse_gravity",
+			"presentation": {
+				"reveal": "always",
+				"panel": "dedicated"
+			},
+			"problemMatcher": [{
+				"base": "$gcc",
+				"fileLocation": [
+					"autoDetect",
+					"${workspaceFolder}"
+				]
+			}],
+			"group": {
+				"kind": "build",
+				"isDefault": true
+			}
+		},
+		{
+			"label": "Upload mm2_reverse_gravity to Switch",
+			"type": "shell",
+			"promptOnClose": true,
+			"command": "./upload.sh",
+			"presentation": {
+				"reveal": "always",
+				"panel": "dedicated"
+			},
+			"problemMatcher": []
+		}
+	]
+}
